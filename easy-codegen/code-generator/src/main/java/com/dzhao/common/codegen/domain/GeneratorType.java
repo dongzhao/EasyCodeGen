@@ -2,14 +2,15 @@ package com.dzhao.common.codegen.domain;
 
 import com.dzhao.common.codegen.impl.AbstractGenerator;
 import com.dzhao.common.codegen.impl.DaoGenerator;
+import com.dzhao.common.codegen.impl.RepositoryGenerator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public enum GeneratorType {
-    DAO("com.dzhao.common.codegen.annotation.GenerateDao", DaoGenerator.class);
-
+    DAO("com.dzhao.common.codegen.annotation.GenerateDao", DaoGenerator.class),
+    REPOSITORY("com.dzhao.common.codegen.annotation.GenerateRepository", RepositoryGenerator.class);
     private final String annotationClassName;
     private final Class<? extends AbstractGenerator> clazz;
 

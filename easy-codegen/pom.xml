@@ -34,7 +34,7 @@
             </dependency>
     </dependencies>-->
 
-<!--    <build>
+  <!-- <build>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -71,8 +71,8 @@
                 <version>2.4</version>
             </plugin>
         </plugins>
-    </build>-->
-
+    </build>
+-->
 
     <profiles>
         <profile>
